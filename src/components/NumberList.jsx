@@ -12,14 +12,14 @@ const NumberList = () => {
 	))
 
 	let addNumber = () => {
-		let copy = [ ...list ]
+		let copy = [...list]
 		copy.push(17)
 		setList(copy)
 		// Obs! List-variabeln innehåller fortfarande det GAMLA värdet. Tills React renderar komponenten igen.
-		console.log('addNumber: listan är ' + copy)
+		// console.log('addNumber: listan är ' + copy)
 	}
 
-	console.log('Listan är: ', list)
+	// console.log('Listan är: ', list)
 
 	return (
 		<>
